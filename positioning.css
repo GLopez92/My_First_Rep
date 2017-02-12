@@ -1,0 +1,30 @@
+header{
+
+}
+
+div#container{
+	width: 60%;
+	margin: auto;
+}
+
+#fix{
+	position: fixed;
+
+}
+
+#rel{
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	height: 200px;
+
+}
+
+#ab{
+	z-index: 2;
+	position: absolute;
+	background-color: #ccc;
+	bottom: 0;
+	right: -10px;
+
+}

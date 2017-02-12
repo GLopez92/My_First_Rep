@@ -1,0 +1,40 @@
+h1{
+	text-align: center;
+}
+
+#red{
+	color: red;
+}
+
+
+#blue{
+	color: blue;
+}
+
+#center{
+	text-align: center;
+}
+#font{
+	font-family: cursive;
+}
+
+#big{
+	
+	font-size: 40px;
+}
+
+#tiny{
+	font-size: 15px;
+}
+.styledFont{
+	color: green;
+}
+
+span{
+	font-size: 30px;
+	color: orange;
+}
+
+#styledImage{
+	border: 20px solid orange;
+}

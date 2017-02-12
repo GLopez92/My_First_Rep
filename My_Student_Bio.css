@@ -1,0 +1,22 @@
+.header{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#bio{
+	float: left;
+	width: 30%;
+}
+.contact{
+	float: left;
+	width: 40%;
+}
+#background{
+	background-color: #FFFFE0;
+}
+
+#pic{
+	float: left;
+	width: 30%;
+}
+h2{margin: 0px;}

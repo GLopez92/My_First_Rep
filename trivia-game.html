@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivai Game</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var questions = {
+		question1: ['Do you like pizza?', "true"],
+		question2: ['Do you like pho?', 'false'],
+		question3: ['Do you like apples?', 'true'],
+		question4: ['Do you like pears?', 'true'],
+		question5: ['Do you like people?', 'false'],
+		question6: ['Do you like prizes?', 'true'],
+		question7: ['Do you like money?', 'false'],
+		question8: ['Do you like the pistons?', 'true'],
+		question9: ['Do you like the warrios?', 'true'],
+		question10:['Do you like the Cavs', 'false']
+	};
+
+
+
+	for ( var i = 1; i <= Object.keys(questions).length; i++)
+	// for ( var i = 1; i < 11; i++){
+
+		var promptAnswer = prompt( questions['question' + i][0] ); 
+
+
+		if (promptAnswer === "true") {
+
+			alert("You are right");
+
+		} else {
+
+			alert("You are wrong");
+
+		};
+	}
+
+
+
+
+</script>
+
+</body>
+</html>

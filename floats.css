@@ -1,0 +1,49 @@
+
+header{
+	background-color: #cccccc;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+#left{
+	background-color: #666;
+	float: left;	
+	
+}
+
+#middle{
+	background-color: #888;
+	float: left;
+
+}
+
+#right{
+	background-color: #666;
+	float: left;
+}
+
+#full{
+	background-color: #eee;
+	clear: both;
+	width: 100%;
+	overflow: auto;
+}
+
+aside{
+	float: left;
+	width: 33%;
+	margin-left: 30px;
+	padding: 20;
+	height: 200px;
+	border: 1px solid #eee;
+}
+
+#division{
+	background-color: #6ea3da;
+}
+
+footer{
+	clear: both;
+}
