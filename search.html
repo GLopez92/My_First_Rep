@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+ var text=" BLah  BLah BLah BLah BLah BLah BLah BLah \
+ BLah BLah BLah BLah Guillermo BLah BLah BLah";
+ var myName= "Guillermo";
+ var hits= [];
+for ( var i=0; i < text.length; i++){
+    console.log(text[i]);
+    if(text[i] === 'G'){
+        for ( var j=i; j < (myName.length + i); j++){
+            hits.push(text[j]);  
+        }
+    };
+};
+
+if (hits.length === 0){
+    console.log("Your name wasn't found!")
+}else{
+    console.log(hits);
+};
+    </script>
+    
+  </body>
+</html>
