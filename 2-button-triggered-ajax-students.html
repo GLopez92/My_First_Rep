@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quoth the Giphy</title>
+</head>
+
+<body>
+  <div id="buttons">
+    
+
+    <!-- STEP ONE: Open this file in the browser and click on the buttons. Watch what happens -->
+
+
+    <!-- STEP TWO: between the dashed lines below
+            * add three more buttons
+            * add a data-person attribute of famous people you know
+            * with a quote said by them -->
+
+    <!-- **************************************** -->
+
+      <button data-animal="tiger">
+        roar
+      </button>
+      <button data-animal="dog">
+       Woof
+      </button>
+    <!-- **************************************** -->
+
+
+    <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
+
+    <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
+
+  </div>
+
+  <img
+    src="jlkasdlkjads.com"
+    data-state="img"
+    data-img="jlkasdlkjads.com"
+    data-gif="sdajlasdljkas.com"
+  >
+
+  <script>
+    $("img").click( function() {
+      var state = $(this).attr("data-state");
+
+      if (state === "img") {
+        
+      } else {
+        
+      }
+    });
+  </script>
+
+  <div id="gifs-appear-here">
+  </div>
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+    $("button").on("click", function() {
+      var animal = $(this).attr("data-animal");
+      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+        
+
+
+      $.ajax({
+          url: queryURL,
+          method: "GET"
+        })
+        .done(function(response) {
+          window.response = response
+          var results = response.data;
+
+          for (var i = 0; i < results.length; i++) {
+            var gifDiv = $("<div class='item'>");
+
+            var animalImage = $("<img>");
+            animalImage.attr("src", results[i].images.fixed_height.url);
+
+            gifDiv.prepend(animalImage);
+
+
+            $("#gifs-appear-here").prepend(gifDiv);
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>
