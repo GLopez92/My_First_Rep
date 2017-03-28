@@ -1,0 +1,14 @@
+.ingredient-button{
+	display: block;
+}
+
+.row{
+
+	margin: 20px;
+}
+
+.ingredient-button, .delete{
+
+	margin: 20px;
+
+}
